@@ -7,7 +7,8 @@
 body{
     background-color: white;
     font-family: 'Poppins';
-    color: #FF4444
+    color: #FF4444;
+    overflow: hidden;
 }
 .hero{
     width: 100vw;
@@ -31,6 +32,7 @@ body{
 }
 .clock-border{
     max-width: 90%;
+    height: 80vh;
     margin: 50px auto;
     margin-bottom: 50px;
     display: flex;
@@ -48,9 +50,11 @@ body{
 }
 .time-border{
     max-width: 100%;
-    margin: 100px 100px 200px;
+    margin: 0 5%;
+    margin-bottom: 100px;
     padding: 60px 40px;
     display: flex;
+    justify-content: space-between;
     background-color: #ffffff7e;  
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.466);
     font-size: 80px;
@@ -67,6 +71,10 @@ body{
     font-size: 100%;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.466);
     font-weight: 800;
+}
+.time-border h1:nth-child(2) {
+    /* color: black; */
+    /* margin-right: 20px; */
 }
 .time-border h1:nth-child(3) {
     padding: 10px 20px;
@@ -101,8 +109,9 @@ body{
         position: absolute;
         background-color: transparent;
         box-shadow: none;
-        left: 42%;
+        left: 40%;
         align-items: center;
+        /* color: black; */
     }
 }
 @media only screen and (max-width: 460px){
